@@ -1,0 +1,15 @@
+D:\Study\C#\Projects\Training\WPF\DataGrid\DataGrid\bin\Debug\DataGrid.exe.config
+D:\Study\C#\Projects\Training\WPF\DataGrid\DataGrid\bin\Debug\DataGrid.exe
+D:\Study\C#\Projects\Training\WPF\DataGrid\DataGrid\bin\Debug\DataGrid.pdb
+D:\Study\C#\Projects\Training\WPF\DataGrid\DataGrid\obj\Debug\DataGrid.csprojAssemblyReference.cache
+D:\Study\C#\Projects\Training\WPF\DataGrid\DataGrid\obj\Debug\MainWindow.g.cs
+D:\Study\C#\Projects\Training\WPF\DataGrid\DataGrid\obj\Debug\App.g.cs
+D:\Study\C#\Projects\Training\WPF\DataGrid\DataGrid\obj\Debug\DataGrid_MarkupCompile.cache
+D:\Study\C#\Projects\Training\WPF\DataGrid\DataGrid\obj\Debug\DataGrid_MarkupCompile.lref
+D:\Study\C#\Projects\Training\WPF\DataGrid\DataGrid\obj\Debug\MainWindow.baml
+D:\Study\C#\Projects\Training\WPF\DataGrid\DataGrid\obj\Debug\DataGrid.g.resources
+D:\Study\C#\Projects\Training\WPF\DataGrid\DataGrid\obj\Debug\DataGrid.Properties.Resources.resources
+D:\Study\C#\Projects\Training\WPF\DataGrid\DataGrid\obj\Debug\DataGrid.csproj.GenerateResource.cache
+D:\Study\C#\Projects\Training\WPF\DataGrid\DataGrid\obj\Debug\DataGrid.csproj.CoreCompileInputs.cache
+D:\Study\C#\Projects\Training\WPF\DataGrid\DataGrid\obj\Debug\DataGrid.exe
+D:\Study\C#\Projects\Training\WPF\DataGrid\DataGrid\obj\Debug\DataGrid.pdb

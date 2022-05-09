@@ -1,0 +1,15 @@
+D:\Study\C#\Projects\Training\WPF\ListViewDemo\ListViewDemo\bin\Debug\ListViewDemo.exe.config
+D:\Study\C#\Projects\Training\WPF\ListViewDemo\ListViewDemo\bin\Debug\ListViewDemo.exe
+D:\Study\C#\Projects\Training\WPF\ListViewDemo\ListViewDemo\bin\Debug\ListViewDemo.pdb
+D:\Study\C#\Projects\Training\WPF\ListViewDemo\ListViewDemo\obj\Debug\ListViewDemo.csprojAssemblyReference.cache
+D:\Study\C#\Projects\Training\WPF\ListViewDemo\ListViewDemo\obj\Debug\MainWindow.g.cs
+D:\Study\C#\Projects\Training\WPF\ListViewDemo\ListViewDemo\obj\Debug\App.g.cs
+D:\Study\C#\Projects\Training\WPF\ListViewDemo\ListViewDemo\obj\Debug\ListViewDemo_MarkupCompile.cache
+D:\Study\C#\Projects\Training\WPF\ListViewDemo\ListViewDemo\obj\Debug\ListViewDemo_MarkupCompile.lref
+D:\Study\C#\Projects\Training\WPF\ListViewDemo\ListViewDemo\obj\Debug\MainWindow.baml
+D:\Study\C#\Projects\Training\WPF\ListViewDemo\ListViewDemo\obj\Debug\ListViewDemo.g.resources
+D:\Study\C#\Projects\Training\WPF\ListViewDemo\ListViewDemo\obj\Debug\ListViewDemo.Properties.Resources.resources
+D:\Study\C#\Projects\Training\WPF\ListViewDemo\ListViewDemo\obj\Debug\ListViewDemo.csproj.GenerateResource.cache
+D:\Study\C#\Projects\Training\WPF\ListViewDemo\ListViewDemo\obj\Debug\ListViewDemo.csproj.CoreCompileInputs.cache
+D:\Study\C#\Projects\Training\WPF\ListViewDemo\ListViewDemo\obj\Debug\ListViewDemo.exe
+D:\Study\C#\Projects\Training\WPF\ListViewDemo\ListViewDemo\obj\Debug\ListViewDemo.pdb

@@ -1,0 +1,15 @@
+D:\Study\C#\Projects\Training\WPF\StackPanelDemo\StackPanelDemo\bin\Debug\StackPanelDemo.exe.config
+D:\Study\C#\Projects\Training\WPF\StackPanelDemo\StackPanelDemo\bin\Debug\StackPanelDemo.exe
+D:\Study\C#\Projects\Training\WPF\StackPanelDemo\StackPanelDemo\bin\Debug\StackPanelDemo.pdb
+D:\Study\C#\Projects\Training\WPF\StackPanelDemo\StackPanelDemo\obj\Debug\StackPanelDemo.csprojAssemblyReference.cache
+D:\Study\C#\Projects\Training\WPF\StackPanelDemo\StackPanelDemo\obj\Debug\MainWindow.g.cs
+D:\Study\C#\Projects\Training\WPF\StackPanelDemo\StackPanelDemo\obj\Debug\App.g.cs
+D:\Study\C#\Projects\Training\WPF\StackPanelDemo\StackPanelDemo\obj\Debug\StackPanelDemo_MarkupCompile.cache
+D:\Study\C#\Projects\Training\WPF\StackPanelDemo\StackPanelDemo\obj\Debug\StackPanelDemo_MarkupCompile.lref
+D:\Study\C#\Projects\Training\WPF\StackPanelDemo\StackPanelDemo\obj\Debug\MainWindow.baml
+D:\Study\C#\Projects\Training\WPF\StackPanelDemo\StackPanelDemo\obj\Debug\StackPanelDemo.g.resources
+D:\Study\C#\Projects\Training\WPF\StackPanelDemo\StackPanelDemo\obj\Debug\StackPanelDemo.Properties.Resources.resources
+D:\Study\C#\Projects\Training\WPF\StackPanelDemo\StackPanelDemo\obj\Debug\StackPanelDemo.csproj.GenerateResource.cache
+D:\Study\C#\Projects\Training\WPF\StackPanelDemo\StackPanelDemo\obj\Debug\StackPanelDemo.csproj.CoreCompileInputs.cache
+D:\Study\C#\Projects\Training\WPF\StackPanelDemo\StackPanelDemo\obj\Debug\StackPanelDemo.exe
+D:\Study\C#\Projects\Training\WPF\StackPanelDemo\StackPanelDemo\obj\Debug\StackPanelDemo.pdb

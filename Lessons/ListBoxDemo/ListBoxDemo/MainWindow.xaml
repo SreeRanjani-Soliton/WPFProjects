@@ -1,0 +1,44 @@
+﻿<Window x:Class="ListBoxDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ListBoxDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400">
+    <StackPanel>
+        <Label FontWeight="Bold">Simple List Box</Label>
+        <ListBox SelectionChanged="ListBox_SelectionChanged">
+            <ListBoxItem>Apple</ListBoxItem>
+            <ListBoxItem>Orange</ListBoxItem>
+            <ListBoxItem>Mango</ListBoxItem>
+            <ListBoxItem>Banana</ListBoxItem>
+        </ListBox>
+        <Label FontWeight="Bold">List box with Images</Label>
+        <ListBox>
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="40" Width="40" Source="https://toppng.com/uploads/preview/apple-fruit-11526067113bpkdzjmq8g.png"/>
+                    <TextBlock VerticalAlignment="Center">Apple</TextBlock>
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="40" Width="40" Source="https://cdn.pixabay.com/photo/2016/02/23/17/42/orange-1218158_960_720.png"/>
+                    <TextBlock VerticalAlignment="Center">Orange</TextBlock>
+                </StackPanel>
+            </ListBoxItem>
+        </ListBox>
+        <Label FontWeight="Bold">List box with DataTemplate</Label>
+        <ListBox Name="lbwDataTemplate">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Height="40" Width="40" Source="{Binding imgUrl}"/>
+                        <TextBlock VerticalAlignment="Center" Text="{Binding name}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </StackPanel>
+</Window>

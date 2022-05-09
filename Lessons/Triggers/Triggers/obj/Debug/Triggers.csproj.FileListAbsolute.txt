@@ -1,0 +1,15 @@
+D:\Study\C#\Projects\Training\WPF\Triggers\Triggers\bin\Debug\Triggers.exe.config
+D:\Study\C#\Projects\Training\WPF\Triggers\Triggers\bin\Debug\Triggers.exe
+D:\Study\C#\Projects\Training\WPF\Triggers\Triggers\bin\Debug\Triggers.pdb
+D:\Study\C#\Projects\Training\WPF\Triggers\Triggers\obj\Debug\Triggers.csprojAssemblyReference.cache
+D:\Study\C#\Projects\Training\WPF\Triggers\Triggers\obj\Debug\MainWindow.g.cs
+D:\Study\C#\Projects\Training\WPF\Triggers\Triggers\obj\Debug\App.g.cs
+D:\Study\C#\Projects\Training\WPF\Triggers\Triggers\obj\Debug\Triggers_MarkupCompile.cache
+D:\Study\C#\Projects\Training\WPF\Triggers\Triggers\obj\Debug\Triggers_MarkupCompile.lref
+D:\Study\C#\Projects\Training\WPF\Triggers\Triggers\obj\Debug\MainWindow.baml
+D:\Study\C#\Projects\Training\WPF\Triggers\Triggers\obj\Debug\Triggers.g.resources
+D:\Study\C#\Projects\Training\WPF\Triggers\Triggers\obj\Debug\Triggers.Properties.Resources.resources
+D:\Study\C#\Projects\Training\WPF\Triggers\Triggers\obj\Debug\Triggers.csproj.GenerateResource.cache
+D:\Study\C#\Projects\Training\WPF\Triggers\Triggers\obj\Debug\Triggers.csproj.CoreCompileInputs.cache
+D:\Study\C#\Projects\Training\WPF\Triggers\Triggers\obj\Debug\Triggers.exe
+D:\Study\C#\Projects\Training\WPF\Triggers\Triggers\obj\Debug\Triggers.pdb

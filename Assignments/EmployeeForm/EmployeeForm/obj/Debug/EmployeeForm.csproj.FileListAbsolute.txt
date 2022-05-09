@@ -1,0 +1,16 @@
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\bin\Debug\EmployeeForm.exe.config
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\bin\Debug\EmployeeForm.exe
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\bin\Debug\EmployeeForm.pdb
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\obj\Debug\EmployeeForm.csprojAssemblyReference.cache
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\obj\Debug\MainWindow.g.cs
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\obj\Debug\App.g.cs
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\obj\Debug\EmployeeForm_MarkupCompile.cache
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\obj\Debug\EmployeeForm_MarkupCompile.lref
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\obj\Debug\MainWindow.baml
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\obj\Debug\EmployeeForm.g.resources
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\obj\Debug\EmployeeForm.Properties.Resources.resources
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\obj\Debug\EmployeeForm.csproj.GenerateResource.cache
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\obj\Debug\EmployeeForm.csproj.CoreCompileInputs.cache
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\obj\Debug\EmployeeForm.exe
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\obj\Debug\EmployeeForm.pdb
+D:\Study\C#\Projects\Training\WPF\Assignments\EmployeeForm\EmployeeForm\obj\Debug\GeneratedInternalTypeHelper.g.cs

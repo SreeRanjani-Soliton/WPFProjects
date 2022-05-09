@@ -1,0 +1,32 @@
+﻿<Window x:Class="ItemsControlDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ItemsControlDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label>Simple ItemsControl</Label>
+        <ItemsControl HorizontalAlignment="Stretch">
+            <TextBlock>Apple</TextBlock>
+            <TextBlock>Banana</TextBlock>
+            <TextBlock>Mango</TextBlock>
+        </ItemsControl>
+        <Label>ItemsControl with Data Binding</Label>
+        <ItemsControl Name="fruits"/>
+        <Label>ItemsControl with DisplayMemberPath</Label>
+        <ItemsControl Name="fruits2" DisplayMemberPath="Name"/>
+        <Label>ItemsControl with DataTemplate</Label>
+        <ItemsControl Name="fruitsWithPriceUI" HorizontalContentAlignment="Stretch">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Name}" Width="100"></TextBlock>
+                        <TextBlock Text="{Binding Price,StringFormat=Rs.{0}}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </StackPanel>
+</Window>

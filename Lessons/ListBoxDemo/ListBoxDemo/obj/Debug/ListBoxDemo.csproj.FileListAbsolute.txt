@@ -1,0 +1,15 @@
+D:\Study\C#\Projects\Training\WPF\ListBoxDemo\ListBoxDemo\bin\Debug\ListBoxDemo.exe.config
+D:\Study\C#\Projects\Training\WPF\ListBoxDemo\ListBoxDemo\bin\Debug\ListBoxDemo.exe
+D:\Study\C#\Projects\Training\WPF\ListBoxDemo\ListBoxDemo\bin\Debug\ListBoxDemo.pdb
+D:\Study\C#\Projects\Training\WPF\ListBoxDemo\ListBoxDemo\obj\Debug\ListBoxDemo.csprojAssemblyReference.cache
+D:\Study\C#\Projects\Training\WPF\ListBoxDemo\ListBoxDemo\obj\Debug\MainWindow.g.cs
+D:\Study\C#\Projects\Training\WPF\ListBoxDemo\ListBoxDemo\obj\Debug\App.g.cs
+D:\Study\C#\Projects\Training\WPF\ListBoxDemo\ListBoxDemo\obj\Debug\ListBoxDemo_MarkupCompile.cache
+D:\Study\C#\Projects\Training\WPF\ListBoxDemo\ListBoxDemo\obj\Debug\ListBoxDemo_MarkupCompile.lref
+D:\Study\C#\Projects\Training\WPF\ListBoxDemo\ListBoxDemo\obj\Debug\MainWindow.baml
+D:\Study\C#\Projects\Training\WPF\ListBoxDemo\ListBoxDemo\obj\Debug\ListBoxDemo.g.resources
+D:\Study\C#\Projects\Training\WPF\ListBoxDemo\ListBoxDemo\obj\Debug\ListBoxDemo.Properties.Resources.resources
+D:\Study\C#\Projects\Training\WPF\ListBoxDemo\ListBoxDemo\obj\Debug\ListBoxDemo.csproj.GenerateResource.cache
+D:\Study\C#\Projects\Training\WPF\ListBoxDemo\ListBoxDemo\obj\Debug\ListBoxDemo.csproj.CoreCompileInputs.cache
+D:\Study\C#\Projects\Training\WPF\ListBoxDemo\ListBoxDemo\obj\Debug\ListBoxDemo.exe
+D:\Study\C#\Projects\Training\WPF\ListBoxDemo\ListBoxDemo\obj\Debug\ListBoxDemo.pdb

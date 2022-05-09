@@ -1,0 +1,31 @@
+﻿<Window x:Class="WPFStyles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFStyles"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label>Defining Style in a Control</Label>
+        <TextBlock Text="Style Test">
+            <TextBlock.Style>
+                <Style>
+                    <Setter Property="TextBlock.FontSize" Value="28"/>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <Label>Defining using Resource</Label>
+        <StackPanel>
+            <StackPanel.Resources>
+                <Style TargetType="TextBlock">
+                    <Setter Property="FontSize" Value="26"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock>Text1</TextBlock>
+            <TextBlock>Text2</TextBlock>
+            <TextBlock>Text3</TextBlock>
+        </StackPanel>
+        <TextBlock>Text4</TextBlock>
+    </StackPanel>
+</Window>

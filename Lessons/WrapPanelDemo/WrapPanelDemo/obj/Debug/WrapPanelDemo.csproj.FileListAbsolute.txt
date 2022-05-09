@@ -1,0 +1,14 @@
+D:\Study\C#\Projects\Training\WPF\WrapPanelDemo\WrapPanelDemo\bin\Debug\WrapPanelDemo.exe.config
+D:\Study\C#\Projects\Training\WPF\WrapPanelDemo\WrapPanelDemo\bin\Debug\WrapPanelDemo.exe
+D:\Study\C#\Projects\Training\WPF\WrapPanelDemo\WrapPanelDemo\bin\Debug\WrapPanelDemo.pdb
+D:\Study\C#\Projects\Training\WPF\WrapPanelDemo\WrapPanelDemo\obj\Debug\MainWindow.g.cs
+D:\Study\C#\Projects\Training\WPF\WrapPanelDemo\WrapPanelDemo\obj\Debug\App.g.cs
+D:\Study\C#\Projects\Training\WPF\WrapPanelDemo\WrapPanelDemo\obj\Debug\WrapPanelDemo_MarkupCompile.cache
+D:\Study\C#\Projects\Training\WPF\WrapPanelDemo\WrapPanelDemo\obj\Debug\WrapPanelDemo_MarkupCompile.lref
+D:\Study\C#\Projects\Training\WPF\WrapPanelDemo\WrapPanelDemo\obj\Debug\MainWindow.baml
+D:\Study\C#\Projects\Training\WPF\WrapPanelDemo\WrapPanelDemo\obj\Debug\WrapPanelDemo.g.resources
+D:\Study\C#\Projects\Training\WPF\WrapPanelDemo\WrapPanelDemo\obj\Debug\WrapPanelDemo.Properties.Resources.resources
+D:\Study\C#\Projects\Training\WPF\WrapPanelDemo\WrapPanelDemo\obj\Debug\WrapPanelDemo.csproj.GenerateResource.cache
+D:\Study\C#\Projects\Training\WPF\WrapPanelDemo\WrapPanelDemo\obj\Debug\WrapPanelDemo.csproj.CoreCompileInputs.cache
+D:\Study\C#\Projects\Training\WPF\WrapPanelDemo\WrapPanelDemo\obj\Debug\WrapPanelDemo.exe
+D:\Study\C#\Projects\Training\WPF\WrapPanelDemo\WrapPanelDemo\obj\Debug\WrapPanelDemo.pdb

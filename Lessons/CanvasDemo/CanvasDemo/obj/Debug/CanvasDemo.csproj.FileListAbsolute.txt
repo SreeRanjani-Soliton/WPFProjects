@@ -1,0 +1,15 @@
+D:\Study\C#\Projects\Training\WPF\CanvasDemo\CanvasDemo\bin\Debug\CanvasDemo.exe.config
+D:\Study\C#\Projects\Training\WPF\CanvasDemo\CanvasDemo\bin\Debug\CanvasDemo.exe
+D:\Study\C#\Projects\Training\WPF\CanvasDemo\CanvasDemo\bin\Debug\CanvasDemo.pdb
+D:\Study\C#\Projects\Training\WPF\CanvasDemo\CanvasDemo\obj\Debug\CanvasDemo.csprojAssemblyReference.cache
+D:\Study\C#\Projects\Training\WPF\CanvasDemo\CanvasDemo\obj\Debug\MainWindow.g.cs
+D:\Study\C#\Projects\Training\WPF\CanvasDemo\CanvasDemo\obj\Debug\App.g.cs
+D:\Study\C#\Projects\Training\WPF\CanvasDemo\CanvasDemo\obj\Debug\CanvasDemo_MarkupCompile.cache
+D:\Study\C#\Projects\Training\WPF\CanvasDemo\CanvasDemo\obj\Debug\CanvasDemo_MarkupCompile.lref
+D:\Study\C#\Projects\Training\WPF\CanvasDemo\CanvasDemo\obj\Debug\MainWindow.baml
+D:\Study\C#\Projects\Training\WPF\CanvasDemo\CanvasDemo\obj\Debug\CanvasDemo.g.resources
+D:\Study\C#\Projects\Training\WPF\CanvasDemo\CanvasDemo\obj\Debug\CanvasDemo.Properties.Resources.resources
+D:\Study\C#\Projects\Training\WPF\CanvasDemo\CanvasDemo\obj\Debug\CanvasDemo.csproj.GenerateResource.cache
+D:\Study\C#\Projects\Training\WPF\CanvasDemo\CanvasDemo\obj\Debug\CanvasDemo.csproj.CoreCompileInputs.cache
+D:\Study\C#\Projects\Training\WPF\CanvasDemo\CanvasDemo\obj\Debug\CanvasDemo.exe
+D:\Study\C#\Projects\Training\WPF\CanvasDemo\CanvasDemo\obj\Debug\CanvasDemo.pdb

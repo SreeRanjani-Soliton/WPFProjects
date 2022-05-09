@@ -1,0 +1,14 @@
+D:\Study\C#\Projects\Training\WPF\DockerPanel\DockerPanel\bin\Debug\DockerPanel.exe.config
+D:\Study\C#\Projects\Training\WPF\DockerPanel\DockerPanel\bin\Debug\DockerPanel.exe
+D:\Study\C#\Projects\Training\WPF\DockerPanel\DockerPanel\bin\Debug\DockerPanel.pdb
+D:\Study\C#\Projects\Training\WPF\DockerPanel\DockerPanel\obj\Debug\MainWindow.g.cs
+D:\Study\C#\Projects\Training\WPF\DockerPanel\DockerPanel\obj\Debug\App.g.cs
+D:\Study\C#\Projects\Training\WPF\DockerPanel\DockerPanel\obj\Debug\DockerPanel_MarkupCompile.cache
+D:\Study\C#\Projects\Training\WPF\DockerPanel\DockerPanel\obj\Debug\DockerPanel_MarkupCompile.lref
+D:\Study\C#\Projects\Training\WPF\DockerPanel\DockerPanel\obj\Debug\MainWindow.baml
+D:\Study\C#\Projects\Training\WPF\DockerPanel\DockerPanel\obj\Debug\DockerPanel.g.resources
+D:\Study\C#\Projects\Training\WPF\DockerPanel\DockerPanel\obj\Debug\DockerPanel.Properties.Resources.resources
+D:\Study\C#\Projects\Training\WPF\DockerPanel\DockerPanel\obj\Debug\DockerPanel.csproj.GenerateResource.cache
+D:\Study\C#\Projects\Training\WPF\DockerPanel\DockerPanel\obj\Debug\DockerPanel.csproj.CoreCompileInputs.cache
+D:\Study\C#\Projects\Training\WPF\DockerPanel\DockerPanel\obj\Debug\DockerPanel.exe
+D:\Study\C#\Projects\Training\WPF\DockerPanel\DockerPanel\obj\Debug\DockerPanel.pdb

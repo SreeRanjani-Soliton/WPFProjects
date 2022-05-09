@@ -1,0 +1,16 @@
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\bin\Debug\WPFStyles.exe.config
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\bin\Debug\WPFStyles.exe
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\bin\Debug\WPFStyles.pdb
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\obj\Debug\WPFStyles.csprojAssemblyReference.cache
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\obj\Debug\MainWindow.g.cs
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\obj\Debug\App.g.cs
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\obj\Debug\WPFStyles_MarkupCompile.cache
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\obj\Debug\WPFStyles_MarkupCompile.lref
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\obj\Debug\App.baml
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\obj\Debug\MainWindow.baml
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\obj\Debug\WPFStyles.g.resources
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\obj\Debug\WPFStyles.Properties.Resources.resources
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\obj\Debug\WPFStyles.csproj.GenerateResource.cache
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\obj\Debug\WPFStyles.csproj.CoreCompileInputs.cache
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\obj\Debug\WPFStyles.exe
+D:\Study\C#\Projects\Training\WPF\WPFStyles\WPFStyles\obj\Debug\WPFStyles.pdb
