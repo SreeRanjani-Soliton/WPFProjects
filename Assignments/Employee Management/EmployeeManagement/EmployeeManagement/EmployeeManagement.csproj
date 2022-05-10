@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1AAA626C-3DBE-45F7-8538-FCB4982C6CC2}</ProjectGuid>
+    <ProjectGuid>{707F4F38-DD79-430B-A68B-A0213728898E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>DesktopContactApp</RootNamespace>
-    <AssemblyName>DesktopContactApp</AssemblyName>
+    <RootNamespace>EmployeeManagement</RootNamespace>
+    <AssemblyName>EmployeeManagement</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -85,11 +85,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="ContactDetailsWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Controls\ContactControl.xaml">
+    <Page Include="EmployeeForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -101,26 +97,16 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Classes\Contact.cs" />
-    <Compile Include="ContactDetailsWindow.xaml.cs">
-      <DependentUpon>ContactDetailsWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\ContactControl.xaml.cs">
-      <DependentUpon>ContactControl.xaml</DependentUpon>
+    <Compile Include="Classes\Employee.cs" />
+    <Compile Include="EmployeeForm.xaml.cs">
+      <DependentUpon>EmployeeForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="NewContactWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NewContactWindow.xaml.cs">
-      <DependentUpon>NewContactWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

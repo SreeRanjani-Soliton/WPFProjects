@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Study\C#\Projects\Training\WPF\Practice\ContactApp\DesktopContactApp\DesktopContactApp\App.xaml
-2-1710316630
+41715188866
 3535687646
-11-983340557
+13393437583
 129379759967
-MainWindow.xaml;NewContactWindow.xaml;
+ContactDetailsWindow.xaml;Controls\ContactControl.xaml;MainWindow.xaml;NewContactWindow.xaml;
 
-False
+True
 

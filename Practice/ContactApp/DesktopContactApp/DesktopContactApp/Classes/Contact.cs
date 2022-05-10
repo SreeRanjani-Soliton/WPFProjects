@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DesktopContactApp.Classes
 {
-    class Contact
+    public class Contact
     {
         //Adding SQLite attributes
         [PrimaryKey,AutoIncrement]

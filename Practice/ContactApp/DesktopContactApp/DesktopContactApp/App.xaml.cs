@@ -15,6 +15,7 @@ namespace DesktopContactApp
     {
         static string dBName = "ContactsDB";
         static string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-        public static string DBPath = System.IO.Path.Combine(folderPath, dBName);
+        static string subFolderName = "C#Assignments";
+        public static string DBPath = System.IO.Path.Combine(folderPath,subFolderName, dBName);
     }
 }

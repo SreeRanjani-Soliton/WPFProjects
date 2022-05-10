@@ -24,6 +24,9 @@ namespace DesktopContactApp
         public NewContactWindow()
         {
             InitializeComponent();
+            //App.XAML has startup URI as MainWindow, that is used here
+            Owner = Application.Current.MainWindow;
+            WindowStartupLocation = WindowStartupLocation.CenterOwner;
         }
 
         private void saveButton_Click(object sender, RoutedEventArgs e)
