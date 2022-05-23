@@ -1,5 +1,7 @@
-﻿using EmployeeManagement.Command;
-using EmployeeManagement.Model;
+﻿using EmployeeManagement;
+using EmployeeManagement.ViewModel.Helper;
+using EmployeeManagementMVVM.Command;
+using EmployeeManagementMVVM.Model;
 using Microsoft.Win32;
 using SQLite;
 using System;
@@ -10,15 +12,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace EmployeeManagement.ViewModel
+namespace EmployeeManagementMVVM.ViewModel
 {
-    public class EmployeeFormViewModel : INotifyPropertyChanged
+    public class EmployeeFormViewModel : INotifyPropertyChanged, ICloseWindows
     {
+        #region Fields
         private Employee _employee;
         private RelayCommand _imgBrowseCommand;
         private OpenFileDialog _imgSelection = new OpenFileDialog();
+        private RelayCommand _addEmployeeCommand;
+        private RelayCommand _cancelCommand;
+        #endregion
 
-        //Properties
+        #region Constructor
+        public EmployeeFormViewModel()
+        {
+            Employee = new Employee();
+        }
+        #endregion
+
+        #region Properties 
         public Employee Employee
         {
             get { return _employee; }
@@ -43,25 +56,36 @@ namespace EmployeeManagement.ViewModel
             private set { _imgBrowseCommand = value; }
         }
 
-        private RelayCommand _addEmployeeCommand;
-
         public RelayCommand AddEmployeeCommand
         {
             get
             {
                 if (_addEmployeeCommand == null)
                 {
-                    _addEmployeeCommand = new RelayCommand(addEmployee);
+                    _addEmployeeCommand = new RelayCommand(addEmployee,canAddEmployee);
                 }
                 return _addEmployeeCommand;
             }
             private set { _addEmployeeCommand = value; }
         }
 
+        public RelayCommand CancelCommand
+        {
+            get
+            {
+                if (_cancelCommand == null)
+                {
+                    _cancelCommand = new RelayCommand(closeWindow);
+                }
+                return _cancelCommand;
+            }
+            private set { _cancelCommand = value; }
+        }
+        #endregion
 
-        //Helper
+        #region HelperFunctions
         /// <summary>
-        /// This method is used to show popup for browsing and selecting image. This will refect in the UI because of INotifyPropertyChange
+        /// This method is used to add employee
         /// </summary>
         /// <param name="parameter">Optional parameter, added to work with relay commands</param>
         private void addEmployee(object parameter)
@@ -72,10 +96,29 @@ namespace EmployeeManagement.ViewModel
                 connection.CreateTable<Employee>();
                 connection.Insert(_employee);
             }
-            MessageBox.Show(_employee.ToString());
+            //MessageBox.Show(_employee.ToString());
+            closeWindow(parameter);
         }
 
+        /// <summary>
+        /// This method is used for notifying if the Add button in form can be enabled or disabled
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        private bool canAddEmployee(object obj)
+        {
+            if (String.IsNullOrEmpty(Employee.Name) || String.IsNullOrEmpty(Employee.Address) || String.IsNullOrEmpty(Employee.PhoneNumber) || String.IsNullOrEmpty(Employee.EmailID) || String.IsNullOrEmpty(Employee.Project) || String.IsNullOrEmpty(Employee.ReportsTo) || string.IsNullOrEmpty(Employee.Gender))
+            {
+                return false;
+            }
+            else
+                return true;
+        }
 
+        /// <summary>
+        /// This method is used to show popup for browsing and selecting image. This will refect in the UI because of INotifyPropertyChange
+        /// </summary>
+        /// <param name="parameter">Optional parameter, added to work with relay commands</param>
         private void browseForImage(object parameter)
         {
             _imgSelection.Filter = "Image files (*.png;*.jpeg)|*.png;*.jpeg|All files (*.*)|*.*";
@@ -88,20 +131,26 @@ namespace EmployeeManagement.ViewModel
                 //NotifyPropertyChanged("Employee");
             }
         }
+        #endregion
+
+        #region Events
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected void NotifyPropertyChanged(string propertyName)
         {
-            if(PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        /// <summary>
+        /// Handling closing of window on Cancel
+        /// </summary>
+        public event EventHandler CloseWindowEvent;
 
-        public EmployeeFormViewModel()
+        private void closeWindow(object optionalParameter)
         {
-            Employee = new Employee();
+            CloseWindowEvent?.Invoke(this, EventArgs.Empty);
         }
+        #endregion
+
     }
 }

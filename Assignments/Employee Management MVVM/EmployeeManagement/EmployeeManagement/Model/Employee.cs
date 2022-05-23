@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeManagement.Model
+namespace EmployeeManagementMVVM.Model
 {
     public class Employee:INotifyPropertyChanged
     {

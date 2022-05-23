@@ -1,16 +1,19 @@
-﻿<Window x:Class="EmployeeManagement.MainWindow"
+﻿<Window x:Class="EmployeeManagementMVVM.View.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:vm="clr-namespace:EmployeeManagement.ViewModel"
-        xmlns:local="clr-namespace:EmployeeManagement"
+        xmlns:vm="clr-namespace:EmployeeManagementMVVM.ViewModel"
+        xmlns:local="clr-namespace:EmployeeManagementMVVM"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="1000">
     <Window.Resources>
         <vm:EmployeeManagerViewModel x:Key="EmployeeManagerViewModel"/>
     </Window.Resources>
-    <Grid Margin="10" DataContext="{Binding Source={StaticResource EmployeeManagerViewModel}}">
+    <Window.DataContext>
+        <Binding Source="{StaticResource EmployeeManagerViewModel}"/>
+    </Window.DataContext>
+    <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
@@ -19,8 +22,8 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.ColumnSpan="2" Background="{StaticResource themeColor}" Foreground="White" VerticalAlignment="Stretch" Padding="5 10 0 10" FontSize="15">Soliton Employee Portal</TextBlock>
-        <StackPanel Grid.Row="1">
+        <TextBlock Grid.ColumnSpan="2" Style="{StaticResource heading}">Soliton Employee Portal</TextBlock>
+        <StackPanel Grid.Row="1" Margin="5">
             <TextBlock Foreground="{StaticResource themeColor}">Welcome! We are here to help you</TextBlock>
             <TextBlock Foreground="{StaticResource themeColor}"><Span FontSize="18" FontWeight="Bold">Add, Delete and View</Span> employee details</TextBlock>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
@@ -46,7 +49,7 @@
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <TextBlock Style="{StaticResource heading}" Grid.Column="0" Grid.ColumnSpan="2" >Employee Details</TextBlock>
+                <TextBlock Style="{StaticResource subHeading}" Grid.Column="0" Grid.ColumnSpan="2" >Employee Details</TextBlock>
                 <Image Grid.Row="1" Source="{Binding ElementName=EmployeeListView, Path=SelectedItem.PhotoPath}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 <UniformGrid Grid.Row="1" Grid.Column="1" Columns="2" Rows="10">
                     <TextBlock Style="{StaticResource detailsField}">Name:</TextBlock>
@@ -61,7 +64,7 @@
                     <TextBlock Style="{StaticResource detailsField}" Text="{Binding ElementName=EmployeeListView, Path=SelectedItem.EmailID}"></TextBlock>
                     <TextBlock Style="{StaticResource detailsField}">Phone Number:</TextBlock>
                     <TextBlock Style="{StaticResource detailsField}" Text="{Binding ElementName=EmployeeListView, Path=SelectedItem.PhoneNumber}"></TextBlock>
-                    <TextBlock Style="{StaticResource heading}">Personal Details</TextBlock>
+                    <TextBlock Style="{StaticResource subHeading}">Personal Details</TextBlock>
                     <TextBlock Style="{StaticResource detailsField}"></TextBlock>
                     <TextBlock Style="{StaticResource detailsField}">Gender:</TextBlock>
                     <TextBlock Style="{StaticResource detailsField}" Text="{Binding ElementName=EmployeeListView, Path=SelectedItem.Gender}"></TextBlock>

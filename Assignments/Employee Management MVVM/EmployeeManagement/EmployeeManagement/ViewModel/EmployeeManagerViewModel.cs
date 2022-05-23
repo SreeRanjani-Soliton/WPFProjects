@@ -1,5 +1,7 @@
-﻿using EmployeeManagement.Command;
-using EmployeeManagement.Model;
+﻿using EmployeeManagement;
+using EmployeeManagementMVVM.Command;
+using EmployeeManagementMVVM.Model;
+using EmployeeManagementMVVM.View;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -10,13 +12,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace EmployeeManagement.ViewModel
+namespace EmployeeManagementMVVM.ViewModel
 {
     public class EmployeeManagerViewModel: INotifyPropertyChanged
     {
-        #region Properties
+        #region Constructor
+        public EmployeeManagerViewModel()
+        {
+            readDB();
+        }
+        #endregion
 
-        //Commands
+        #region Properties
+        //Other Properties
+        private ObservableCollection<Employee> _employees;
+        public ObservableCollection<Employee> Employees
+        {
+            get { return _employees; }
+            set
+            {
+                _employees = value;
+                NotifyPropertyChanged("Employees");
+            }
+        }
+
+        //Command
+        //Add Employee Command
         private RelayCommand _addEmployeeCommand;
         public RelayCommand AddEmployeeCommand
         {
@@ -31,65 +52,57 @@ namespace EmployeeManagement.ViewModel
             private set{_addEmployeeCommand = value;}
         }
 
+        //Delete Employee Command
         private RelayCommand _deleteEmployeeCommand;
-
         public RelayCommand DeleteEmployeeCommand
         {
             get
             {
                 if (_deleteEmployeeCommand == null)
                 {
-                    _deleteEmployeeCommand = new RelayCommand(deleteEmployee);
+                    _deleteEmployeeCommand = new RelayCommand(deleteEmployee,canDeleteEmployee);
                 }
                 return _deleteEmployeeCommand;
             }
             set { _deleteEmployeeCommand = value; }
         }
 
-        //Other Properties
-        private ObservableCollection<Employee> _employees;
-        public ObservableCollection<Employee> Employees
-        {
-            get { return _employees; }
-            set
-            {
-                _employees = value;
-                NotifyPropertyChanged("Employees");
-            }
-        }
-
-        public object EmployeeListView { get; private set; }
+        //public object EmployeeListView { get; private set; }
         #endregion
 
-        #region Helper Methods
+        #region HelperMethods
         private void addEmployee(object obj)
         {
-            EmployeeForm employeeForm = new EmployeeForm();
-            employeeForm.ShowDialog();
+            //EmployeeForm employeeForm = new EmployeeForm();
+            //employeeForm.ShowDialog();
+            ShowAddEmployeeWindow();
             readDB();
         }
 
         private void deleteEmployee(object obj)
         {
             Employee selEmployee = obj as Employee;
-            if (selEmployee == null)
-            {
-                MessageBox.Show($"Please select an item", "Delete Confirmation", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            else
-            {
                 MessageBoxResult userResponse = MessageBox.Show($"Do you want to delete the selected employee's details", "Delete Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Warning);
-                if (userResponse == MessageBoxResult.Yes)
+            if (userResponse == MessageBoxResult.Yes)
+            {
+                using (SQLiteConnection connection = new SQLiteConnection(App.DBPath))
                 {
-                    using (SQLiteConnection connection = new SQLiteConnection(App.DBPath))
-                    {
-                        //Create table if not already present to avoid errors
-                        connection.CreateTable<Employee>();
-                        connection.Delete(selEmployee);
-                        readDB();
-                    }
+                    //Create table if not already present to avoid errors
+                    connection.CreateTable<Employee>();
+                    connection.Delete(selEmployee);
+                    readDB();
                 }
             }
+        }
+
+        private bool canDeleteEmployee(object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            else
+                return true;
         }
 
         private void readDB()
@@ -105,9 +118,11 @@ namespace EmployeeManagement.ViewModel
                 }
             }  
         }
+        #endregion
 
+        #region Events
+        //Event for handling property change between object and UI
         public event PropertyChangedEventHandler PropertyChanged;
-
         private void NotifyPropertyChanged(string propertyName)
         {
             if(PropertyChanged != null)
@@ -116,14 +131,14 @@ namespace EmployeeManagement.ViewModel
             }
         }
 
-        #endregion
-
-        #region Constructor
-        public EmployeeManagerViewModel()
+        //Event to launch window to add employee
+        public event EventHandler AddEmployeeWindowEvent;
+        private void ShowAddEmployeeWindow()
         {
-            readDB();
+            AddEmployeeWindowEvent?.Invoke(this, EventArgs.Empty);
         }
         #endregion
+
     }
 
 }

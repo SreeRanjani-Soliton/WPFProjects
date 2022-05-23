@@ -1,4 +1,5 @@
-﻿using EmployeeManagement.Model;
+﻿using EmployeeManagementMVVM.Model;
+using EmployeeManagementMVVM.ViewModel;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -15,71 +16,35 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace EmployeeManagement
+namespace EmployeeManagementMVVM.View
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        EmployeeManagerViewModel viewModel;
         public MainWindow()
         {
             InitializeComponent();
             WindowStartupLocation = WindowStartupLocation.CenterScreen;
-            //readDBAndUpdateUI();
-
+            Loaded += MainWindow_Loaded;
+            /*Alternative method of handling ShowDialog
+            viewModel = new EmployeeManagerViewModel();
+            this.DataContext = viewModel;
+            viewModel.ShowAddEmployeeWindowEvent += (s, e) => new EmployeeForm().ShowDialog();
+            */
         }
 
-       private void AddEmployee_Click(object sender, RoutedEventArgs e)
+        //Handling of showing add employee dialog event from VM
+        private void MainWindow_Loaded(object sender, RoutedEventArgs eventArgs)
         {
-            EmployeeForm employeeForm = new EmployeeForm();
-            employeeForm.ShowDialog();
-            //readDBAndUpdateUI();
+            //Checking if the DataContext is EmployeeManagerViewModel
+            if(DataContext is EmployeeManagerViewModel vm)
+            {
+                vm.AddEmployeeWindowEvent += (s, e) => new EmployeeForm().ShowDialog();
+            }
         }
 
-
-        private void readDBAndUpdateUI()
-        {
-            //using (SQLiteConnection connection = new SQLiteConnection(App.DBPath))
-            //{
-            //    connection.CreateTable<Employee>();
-            //    var emplyoees = connection.Table<Employee>().ToList();
-            //    if (emplyoees != null)
-            //    {
-            //        //to string property will be applied to every element in the contact and mapped to the item source
-            //        EmployeeListView.ItemsSource = emplyoees;
-            //    }
-            //}
-        }
-
-        //private void DeleteEmployee_Click(object sender, RoutedEventArgs e)
-        //{
-        //    Employee selEmployee = (Employee)EmployeeListView.SelectedItem;
-        //    if(selEmployee == null)
-        //    {
-        //       MessageBox.Show($"Please select an item", "Delete Confirmation", MessageBoxButton.OK, MessageBoxImage.Warning);
-        //    }
-        //    else
-        //    {
-        //        MessageBoxResult userResponse = MessageBox.Show($"Do you want to delete the selected employee's details", "Delete Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Warning);
-        //        if (userResponse == MessageBoxResult.Yes)
-        //        {
-        //            using (SQLiteConnection connection = new SQLiteConnection(App.DBPath))
-        //            {
-        //                //Create table if not already present to avoid errors
-        //                connection.CreateTable<Employee>();
-        //                connection.Delete(selEmployee);
-        //                readDBAndUpdateUI();
-        //            }
-        //        }
-        //    }
-            
-        //}
-
-        //private void EmployeeListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        //{
-        //    Employee selEmployee = EmployeeListView.SelectedItem as Employee;
-        //    //selEmpDetails.DataContext = selEmployee;
-        //}
     }
 }

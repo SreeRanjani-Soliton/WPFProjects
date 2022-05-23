@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace EmployeeManagement.Command
+namespace EmployeeManagementMVVM.Command
 {
     public class RelayCommand : ICommand
     {

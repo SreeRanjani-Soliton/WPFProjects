@@ -101,6 +101,7 @@
     <Compile Include="Model\Employee.cs" />
     <Compile Include="ViewModel\EmployeeFormViewModel.cs" />
     <Compile Include="ViewModel\Helper\Converter.cs" />
+    <Compile Include="ViewModel\Helper\ICloseWindows.cs" />
     <Compile Include="ViewModel\Helper\ValidationRules.cs" />
     <Compile Include="View\EmployeeForm.xaml.cs">
       <DependentUpon>EmployeeForm.xaml</DependentUpon>
